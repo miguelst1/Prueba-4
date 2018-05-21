@@ -75,6 +75,14 @@ public class Tiburon extends Pez {
         System.out.println("Estoy comiendo " + this.comida);    
     }
     
+public void esPeligroso() {
+        if (this.peligroso) {
+            System.out.println("Soy peligroso");
+        } else {
+            System.out.println("No soy peligroso");
+        }
+    }
+
     @Override
     protected void finalize() throws Throwable {
         numTiburones--;
